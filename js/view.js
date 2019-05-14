@@ -1,4 +1,5 @@
 $(function(){
+	// TODO: Add complete validation for each field
 	validator = $('#form-identity').validate({
 	    rules: {
 	      input_name: {
