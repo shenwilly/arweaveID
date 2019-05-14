@@ -20,6 +20,7 @@
 		<script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
 
 		<script src="./js/view.js"></script>
+		<script src="./js/handle_input.js"></script>
 		<script src="./js/login.js"></script>
 
 		<style type="text/css">
@@ -75,6 +76,10 @@
 				width: 30px;
 				height: 30px;
 			}
+			.mini-icon-frame {
+				width: 25px;
+				height: 25px;
+			}
 		</style>
 	</head>
 
@@ -101,8 +106,66 @@
 						</div>
 					</div>
 
-					<div>
-						
+					<div class="logged-in" style="display: none;">
+						<form>
+							<div class="row mb-3">
+								<div class="col-lg-12" style="text-align: center;">
+									<img class="mini-icon-frame" src="./img/arweave.png"> <span id="arweave_public_address"></span>
+								</div>								
+							</div>
+							<div class="row">
+								<div class="offset-lg-4 col-lg-4">
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend">
+									    <span class="input-group-text">
+									    	@
+									    </span>
+									  </div>
+									  <input type="text" class="form-control" placeholder="Public Name" aria-label="Name" id="input_name">
+									  <button type="button" class="btn btn-primary ml-2">Save</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="offset-lg-4 col-lg-4">
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend">
+									    <span class="input-group-text" style="width: 40px;">
+									    	<i class="fa fa-ethereum mx-auto" aria-hidden="true"></i>
+									    </span>
+									  </div>
+									  <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Name" id="input_ethereum">
+									  <button type="button" class="btn btn-primary ml-2">Save</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="offset-lg-4 col-lg-4">
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend">
+									    <span class="input-group-text" style="width: 40px;">
+									    	<i class="fa fa-twitter mx-auto" aria-hidden="true"></i>
+									    </span>
+									  </div>
+									  <input type="text" class="form-control" placeholder="Twitter Handle" aria-label="Name" id="input_discord">
+									  <button type="button" class="btn btn-primary ml-2">Save</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="offset-lg-4 col-lg-4">
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend">
+									    <span class="input-group-text" style="width: 40px;">
+									    	<i class="fa fa-discord mx-auto" aria-hidden="true"></i>
+									    </span>
+									  </div>
+									  <input type="text" class="form-control" placeholder="Discord ID" aria-label="Name" id="input_twitter">
+									  <button type="button" class="btn btn-primary ml-2">Save</button>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
