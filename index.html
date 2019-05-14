@@ -20,7 +20,8 @@
 		<script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
 
 		<script src="./js/view.js"></script>
-		<script src="./js/handle_input.js"></script>
+		<script src="./js/fetch_identity.js"></script>
+		<script src="./js/save_identity_field.js"></script>
 		<script src="./js/login.js"></script>
 
 		<style type="text/css">
@@ -86,9 +87,6 @@
 	<body>
 		<div class="container" id="index-page">
 			<div class="row my-2">
-				<!-- <div class="col-lg-12 mt-5 loading-question" style="text-align: center">
-					<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-				</div> -->
 				<div class="col-lg-12 mt-3" style="text-align: center;">
 					<h1>Arweave<strong>ID</strong></h1>
 				</div>
@@ -107,7 +105,10 @@
 					</div>
 
 					<div class="logged-in" style="display: none;">
-						<form>
+						<div class="loading-indicator my-4" style="text-align: center; display: none;">
+							<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+						</div>
+						<form id="form-identity">
 							<div class="row mb-3">
 								<div class="col-lg-12" style="text-align: center;">
 									<img class="mini-icon-frame" src="./img/arweave.png"> <span id="arweave_public_address"></span>
