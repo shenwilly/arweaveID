@@ -1,5 +1,5 @@
 $(function(){
-
+	
 });
 
 function update_login_state(is_logged_in, address) {
