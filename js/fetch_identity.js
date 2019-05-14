@@ -8,21 +8,11 @@ function fetch_identity (address) {
                 op: 'and',
                 expr1:
                     {
-                        op: 'and',
-                        expr1:
-                            {
-                                op: 'equals',
-                                expr1: 'App-Name',
-                                expr2: 'arweave-id'
-                            },
-                        expr2: 
-                            {
-                                op: 'equals',
-                                expr1: 'App-Version',
-                                expr2: versionNumber,
-                            }
-                            },
-                        expr2:
+                        op: 'equals',
+                        expr1: 'App-Name',
+                        expr2: 'arweave-id'
+                    },
+                expr2:
                     {
                         op: 'equals',
                         expr1: 'from',
