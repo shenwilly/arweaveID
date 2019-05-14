@@ -63,16 +63,16 @@ function fetch_identity (address) {
         console.log(tx_rows);
 
         $(".loading-indicator").hide();
-        tx_rows.sort((a, b) => (Number(b.unixTime) - Number(a.unixTime)))
-        tx_rows.forEach(function (item) {
 
-            // lat modifed datetime
+        // sort ascending to get latest identity
+        tx_rows.sort((a, b) => (Number(a.unixTime) - Number(b.unixTime)))
+        tx_rows.forEach(function (item) {
+            // last modifed datetime
             // var datetime = new Date(item["unixTime"]*1000);
             // var date_options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' };
             // var formatted_datetime = datetime.toLocaleDateString('default', date_options)
 
             $("#form-identity input[data='" + item['type'] + "']").val(item['value'])
-
         })
 
         $("#form-identity").show()
