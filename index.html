@@ -81,6 +81,10 @@
 				width: 25px;
 				height: 25px;
 			}
+			.input-group {
+				margin-top: 15px;
+				margin-bottom: 0 !important;
+			}
 		</style>
 	</head>
 
@@ -122,9 +126,10 @@
 									    	@
 									    </span>
 									  </div>
-									  <input type="text" class="form-control" placeholder="Public Name" aria-label="Public Name" id="input_name" data="name">
+									  <input type="text" class="form-control" placeholder="Public Name" aria-label="Public Name" name="input_name" data="name" required="">
 									  <button type="button" class="btn btn-primary btn-arweave ml-2 btn-save">Save</button>
 									</div>
+									<label id="input_name-error" class="error mb-0" for="input_name" style="display: none;"></label>
 								</div>
 							</div>
 							<div class="row">
@@ -135,9 +140,10 @@
 									    	<i class="fa fa-envelope mx-auto" aria-hidden="true"></i>
 									    </span>
 									  </div>
-									  <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" id="input_email" data="email">
+									  <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" name="input_email" data="email">
 									  <button type="button" class="btn btn-primary btn-arweave ml-2 btn-save">Save</button>
 									</div>
+									<label id="input_email-error" class="error mb-0" for="input_email" style="display: none;"></label>
 								</div>
 							</div>
 							<div class="row">
@@ -148,9 +154,10 @@
 									    	<i class="fa fa-ethereum mx-auto" aria-hidden="true"></i>
 									    </span>
 									  </div>
-									  <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Ethereum Address" id="input_ethereum" data="ethereum">
+									  <input type="text" class="form-control" placeholder="Ethereum Address" aria-label="Ethereum Address" name="input_ethereum" data="ethereum">
 									  <button type="button" class="btn btn-primary btn-arweave ml-2 btn-save">Save</button>
 									</div>
+									<label id="input_ethereum-error" class="error mb-0" for="input_ethereum" style="display: none;"></label>
 								</div>
 							</div>
 							<div class="row">
@@ -161,9 +168,10 @@
 									    	<i class="fa fa-twitter mx-auto" aria-hidden="true"></i>
 									    </span>
 									  </div>
-									  <input type="text" class="form-control" placeholder="Twitter Handle" aria-label="Twitter Handle" id="input_twitter" data="twitter">
+									  <input type="text" class="form-control" placeholder="Twitter Handle" aria-label="Twitter Handle" name="input_twitter" data="twitter">
 									  <button type="button" class="btn btn-primary btn-arweave ml-2 btn-save">Save</button>
 									</div>
+									<label id="input_twitter-error" class="error mb-0" for="input_twitter" style="display: none;"></label>
 								</div>
 							</div>
 							<div class="row">
@@ -174,9 +182,10 @@
 									    	<i class="fa fa-discord mx-auto" aria-hidden="true"></i>
 									    </span>
 									  </div>
-									  <input type="text" class="form-control" placeholder="Discord ID" aria-label="Discord ID" id="input_discord" data="discord">
+									  <input type="text" class="form-control" placeholder="Discord ID" aria-label="Discord ID" name="input_discord" data="discord">
 									  <button type="button" class="btn btn-primary btn-arweave ml-2 btn-save">Save</button>
 									</div>
+									<label id="input_discord-error" class="error mb-0" for="input_discord" style="display: none;"></label>
 								</div>
 							</div>
 						</form>
