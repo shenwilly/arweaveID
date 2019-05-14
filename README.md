@@ -1,7 +1,7 @@
 # ArweaveID
-An identity registry for Arweave addresses
+An identity registry for Arweave addresses.
 
-To fetch an Arweave address' identity (ArQL):
+To fetch address data (ArQL):
 ```
 {
     op: 'and',
