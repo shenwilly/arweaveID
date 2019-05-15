@@ -1,6 +1,8 @@
 # ArweaveID
 An identity registry for Arweave addresses.
 
+Last deployed permaweb: https://arweave.net/fGUdNmXFmflBMGI2f9vD7KzsrAc1s1USQgQLgAVT0W0
+
 To fetch address data (ArQL):
 ```
 {
